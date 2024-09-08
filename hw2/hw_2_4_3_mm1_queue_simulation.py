@@ -44,7 +44,7 @@ class MM1QueueSimulator:
         return -math.log(1 - random.random()) / rate
 
     def exponential_random_np(self, rate):
-        """Use numpy emponential fyunction"""
+        """Use numpy exponential method"""
         import numpy as np
         return np.random.exponential(scale=1/rate)
 
